@@ -1,3 +1,6 @@
+# This file connects esp8266 with wifi
+# To connect, it want a SSID and Password
+
 def wlan_connect(ssid, password):
     import network
     wlan = network.WLAN(network.STA_IF)
@@ -12,3 +15,4 @@ def wlan_connect(ssid, password):
     else:
         print('connection to', ssid, 'failed')
     print('network config:', wlan.ifconfig())
+
