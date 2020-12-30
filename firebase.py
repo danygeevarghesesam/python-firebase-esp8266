@@ -3,6 +3,7 @@ from machine import Pin
 
 Firebaseurl = "https://your_PROJECT_URL/mains.json"
 
+# LED output of Esp8266
 led = Pin(16, Pin.OUT)
 
 # Reading JSON
